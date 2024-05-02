@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUIS ANDRES MOLINA ZURITA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <center>
+    <div class="frame" id="frame1">
+        <h1>Registro de Trabajadores</h1>
+        <form action="pagina2/index.html" method="post">
+
+            <label for="rut">Rut:</label>
+            <input type="text" id="rut" name="rut" required>
+            <label for="nombre">Nombres:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="apellido_paterno">Apellido paterno:</label>
+            <input type="text" id="apellido_paterno" name="apellido_paterno" required>
+            <label for="apellido_materno">Apellido materno:</label>
+            <input type="text" id="apellido_materno" name="apellido_materno" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="nivel_estudio">Nivel de Estudio:</label>
+            <select id="nivel_estudio" name="nivel_estudio" required>
+                <option value="">Seleccione su nivel de estudio</option>
+                <option value="universidad">Universidad</option>
+                <option value="tecnico_superior">Técnico Superior</option>
+                <option value="bachiller">Bachiller</option>
+            </select>
+            <label>Sexo:</label>
+            <ul>
+                <li><label><input type="radio" name="sexo" value="masculino" required> Masculino</label></li>
+                <li><label><input type="radio" name="sexo" value="femenino" required> Femenino</label></li>
+            </ul>
+            <label for="Ciudad_de_Nacimiento">Ciudad de Nacimiento:</label>
+            <select id="Ciudad_de_Nacimiento" name="Ciudad_de_Nacimiento" onchange="mostrarComentarios(this)">
+                <option value="">seleccione su municipio</option>
+                <option value="Andrés Ibañez-Santa Cruz de la Sierra">Andres Ibañez-Santa cruz</option>
+                <option value="Ángel Sandoval San Matías">Ángel Sandoval-San Matías</option>
+                <option value="Chiquitos San José">Chiquitos-San José</option>
+                <option value="otro">Otro</option>
+
+            </select>
+            <div id="comentarios">
+                <label for="Ciudad_de_Nacimiento">Especifique su municipio:</label>
+                <input type="text" id="Ciudad_de_Nacimiento" name="Ciudad_de_Nacimiento">
+            </div>
+            <center>
+            <label for="curriculum">Currículum (PDF o documento):</label>
+            <input type="file" id="curriculum" name="curriculum" accept=".pdf,.doc,.docx" required>
+            </select>
+            </center>
+            <p></p>
+            <center>
+                <label for="Fotografia">Fotografia del Trabajador (PNG O JPG):</label>
+                <input type="file" id="Fotografia" name="Fotografia" accept=".png,.jpeg,.gif,.jpg" required>
+                </select>
+            </center>
+            <p></p>
+            <center>
+            <input type="submit" value="Registrar Trabajador">
+        </center>
+        </form>
+    </div>
+    <div class="frame" id="frame2">
+        <!-- Contenido de la página interna -->
+        <h1>BIENVENIDO DE NUEVO</h1>
+        <ul>
+            <img src="cocoa.gif" alt="cafe caliente que aparece cada cierto tiempo" width="500" height="200">
+        </ul>
+        <!-- Aquí puedes agregar más elementos como menús, desplegables, gifs, etc. -->
+    </div>
+    <div class="frame" id="frame3">
+        <a href="https://virtual.upds.edu.bo/my/courses.php">Ir a página externa</a>
+    </div>
+    <center>
+    <script src="script.js"></script>
+</body>
+</html>
